@@ -5,7 +5,7 @@ import TabSection from "./components/TabSection";
 import TwoColumnCard from "./components/TwoColumnCard";
 import FeaturedAlternate from "./components/FeaturedAlternate";
 import Footer from "./components/Footer";
-import UsesList from "./components/UsesList";
+import Achievements from "./components/Achievements";
 
 import "./index.css";
 import SectionWrapper from "./components/Global/SectionWrapper";
@@ -32,8 +32,8 @@ function App() {
           <SectionWrapper id="projects" heading="PROJECTS">
             <FeaturedAlternate />
           </SectionWrapper>
-          <SectionWrapper id="uses" heading="USES">
-            <UsesList />
+          <SectionWrapper id="achievements" heading="ACHIEVEMENTS">
+            <Achievements />
           </SectionWrapper>
           <Footer />
         </>

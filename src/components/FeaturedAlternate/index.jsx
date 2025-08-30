@@ -7,79 +7,59 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
-    image: images.agencyImage,
-    heading: "Agency Website",
+    image: images.supplyChainImage, // add this to your constants/image.js
+    heading: "Medical Supply Chain Monitoring",
     description:
-      "<p>A sample agency website, with blog listing and blog single. I also implemented this in a way that it would be easy for the HubSpot content editors to edit it.</p>",
-    websiteLink: "https://22288485.hs-sites.com/",
+      "<p>IoT-based solution to monitor vaccines during transportation. Tracks <b>temperature, humidity, and location</b> in real-time with alerts when conditions deviate. Ensures vaccine safety and compliance.</p>",
+    githubLink: "https://github.com/Anguraj2004/Medical-supply-chain-monitoring-",
     // techno
     html: true,
     css: true,
     javascript: true,
-    hubspot: true,
   },
   {
     id: 2,
-    image: images.bluecheckImage,
-    heading: "Bluecheck",
+    image: images.locationAppImage,
+    heading: "Location App",
     description:
-      "<Also>One of my first freelance project.<p/> <br/> <p>I had some fun working with this project <i>independently.</i> Also improved a lot with the HubSpot CMS and tailwind CSS</p>",
-    html: true,
-    css: true,
-    javascript: true,
-    hubspot: true,
+      "<p>Mobile app for <b>real-time location tracking</b> with map integration. Provides GPS-based updates and easy visualization of tracked devices/users.</p>",
+    githubLink: "https://github.com/Anguraj2004/LOCATION-APP",
+    react: true,
     tailwind: true,
+    javascript: true,
   },
   {
     id: 3,
-    image: images.slothImage,
-    heading: "The Language Sloth Website",
+    image: images.llmShellAgentImage,
+    heading: "LLM Shell Agent",
     description:
-      "<p>I would say this is the first projet that I collaborated with an online friend (who is responsible for the backend development) for the backend we used django with a combination of the discord auth. <br> <br> Initially the plan was to implement this using react but due to some time conflict we agreed to just use django + basic HTML & TailwindCSS.</p>",
-    websiteLink: "https://languagesloth.com/",
-    // techno
-    html: true,
-    css: true,
-    javascript: true,
-    tailwind: true,
+      "<p>AI-powered shell assistant built with Python. Uses LLMs to understand commands and <b>execute system/shell operations</b> via natural language queries. Integrated with Ollama API for local inference.</p>",
+    githubLink: "https://github.com/Anguraj2004/llm_shell_agent",
+    python: true,
   },
   {
     id: 4,
-    image: images.shortlyImage,
-    heading: "Shortly",
+    image: images.erpImage,
+    heading: "College ERP website with distinct modules for Admin, Faculty, and Students",
     description:
-      "One of my frontendmentor.io challenge projects! Had a good one working with this one and enhance my JavaScript and CSS skills.",
-    websiteLink: "https://shorten-app.netlify.app/",
-    githubLink: "https://github.com/felixmacaspac/fem-url-shortener-website",
-    // techno
-    html: true,
-    css: true,
+      "<p>Full-stack ERP system using <b>MERN stack</b>. Provides distinct modules for <b>Admin, Faculty, and Students</b>. Supports authentication, attendance tracking, exam marks, notices, and modern dashboards. Built with React, Tailwind, Redux, and JWT.</p>",
+    githubLink: "https://github.com/Anguraj2004/Unit-ED",
+    react: true,
+    tailwind: true,
     javascript: true,
+    css: true,
+    html: true,
   },
   {
     id: 5,
-    image: images.sunnysideImage,
-    heading: "Sunnyside",
+    image: images.smartHallImage,
+    heading: "MPC System for seminar hall appliances based on occupancy",
     description:
-      "<p>Simple frontendmentor.io challenge project! Also had a lot of fun working with the UI of this project.</p>",
-    websiteLink: "https://sunny-page.netlify.app/",
-    githubLink: "https://github.com/felixmacaspac/fem-sunnyside-landing-page",
-    // techno
-    html: true,
-    css: true,
-    javascript: true,
-  },
-  {
-    id: 6,
-    image: images.catifyImage,
-    heading: "Catify",
-    description:
-      "<p>Started this project way back 2020. One of my first project when I was self-studying front-end development.</p> <br/> <p>Fun fact: I had this project idea because of tinder lol! instead of <i>people</i> this website is for cats! </p>",
-    websiteLink: "https://catify-app.netlify.app/",
-    githubLink: "https://github.com/felixmacaspac/catify-landing-page",
-    // techno
-    html: true,
-    css: true,
+      "<p>IoT + AI based classroom automation system. Integrates <b>person detection (camera), AC optimization, and smart light control</b> for energy efficiency. Built with ESP32-CAM, Flask backend, and React Native app. Includes ML for crowd detection.</p>",
+    githubLink: "https://github.com/Anguraj2004/smart-hall", // you can push the rebuilt repo here
+    react: true,
+    tailwind: true,
+    python: true,
     javascript: true,
   },
 ];
@@ -138,10 +118,7 @@ const CardGrid = () => {
                           xmlns="http://www.w3.org/2000/svg"
                           className="w-6 h-6 text-secondary dark:text-secondary-50 fill-current"
                         >
-                          <path
-                            d="M10.2397 0.517241C4.86796 0.517241 0.51709 4.86811 0.51709 10.2399C0.51709 14.5421 3.30019 18.1759 7.16493 19.4642C7.65106 19.5493 7.83336 19.2576 7.83336 19.0024C7.83336 18.7714 7.8212 18.0058 7.8212 17.1915C5.3784 17.6412 4.74643 16.596 4.55197 16.0491C4.4426 15.7696 3.96862 14.9067 3.55541 14.6758C3.21512 14.4935 2.72898 14.0438 3.54325 14.0317C4.30891 14.0195 4.85581 14.7366 5.03811 15.0282C5.91314 16.4988 7.31077 16.0856 7.86982 15.8304C7.95489 15.1984 8.21011 14.773 8.48963 14.53C6.32635 14.2869 4.06584 13.4483 4.06584 9.72942C4.06584 8.67208 4.4426 7.79705 5.06241 7.11647C4.96519 6.8734 4.62489 5.87683 5.15964 4.53997C5.15964 4.53997 5.97391 4.28475 7.83336 5.53654C8.61117 5.31778 9.43759 5.2084 10.264 5.2084C11.0904 5.2084 11.9169 5.31778 12.6947 5.53654C14.5541 4.2726 15.3684 4.53997 15.3684 4.53997C15.9031 5.87683 15.5628 6.8734 15.4656 7.11647C16.0854 7.79705 16.4622 8.65993 16.4622 9.72942C16.4622 13.4605 14.1895 14.2869 12.0262 14.53C12.3787 14.8338 12.6825 15.4171 12.6825 16.3286C12.6825 17.629 12.6704 18.6742 12.6704 19.0024C12.6704 19.2576 12.8527 19.5614 13.3388 19.4642C15.2689 18.8125 16.946 17.5721 18.1342 15.9173C19.3224 14.2626 19.9617 12.277 19.9623 10.2399C19.9623 4.86811 15.6114 0.517241 10.2397 0.517241Z"
-                            fill="current"
-                          />
+                          <path d="M10.2397 0.517241C4.86796 0.517241 0.51709 4.86811 0.51709 10.2399C0.51709 14.5421 3.30019 18.1759 7.16493 19.4642C7.65106 19.5493 7.83336 19.2576 7.83336 19.0024C7.83336 18.7714 7.8212 18.0058 7.8212 17.1915C5.3784 17.6412 4.74643 16.596 4.55197 16.0491C4.4426 15.7696 3.96862 14.9067 3.55541 14.6758C3.21512 14.4935 2.72898 14.0438 3.54325 14.0317C4.30891 14.0195 4.85581 14.7366 5.03811 15.0282C5.91314 16.4988 7.31077 16.0856 7.86982 15.8304C7.95489 15.1984 8.21011 14.773 8.48963 14.53C6.32635 14.2869 4.06584 13.4483 4.06584 9.72942C4.06584 8.67208 4.4426 7.79705 5.06241 7.11647C4.96519 6.8734 4.62489 5.87683 5.15964 4.53997C5.15964 4.53997 5.97391 4.28475 7.83336 5.53654C8.61117 5.31778 9.43759 5.2084 10.264 5.2084C11.0904 5.2084 11.9169 5.31778 12.6947 5.53654C14.5541 4.2726 15.3684 4.53997 15.3684 4.53997C15.9031 5.87683 15.5628 6.8734 15.4656 7.11647C16.0854 7.79705 16.4622 8.65993 16.4622 9.72942C16.4622 13.4605 14.1895 14.2869 12.0262 14.53C12.3787 14.8338 12.6825 15.4171 12.6825 16.3286C12.6825 17.629 12.6704 18.6742 12.6704 19.0024C12.6704 19.2576 12.8527 19.5614 13.3388 19.4642C15.2689 18.8125 16.946 17.5721 18.1342 15.9173C19.3224 14.2626 19.9617 12.277 19.9623 10.2399C19.9623 4.86811 15.6114 0.517241 10.2397 0.517241Z" />
                         </svg>
                         Github
                       </span>
@@ -162,6 +139,7 @@ const CardGrid = () => {
                   </span>
                 </div>
               </div>
+              {/* Tech logos rendering  */}
               <div className="flex flex-wrap items-center gap-4 py-6">
                 {proj.html && (
                   <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
@@ -218,23 +196,23 @@ const CardGrid = () => {
                     />
                   </div>
                 )}
-                {proj.hubspot && (
-                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
-                    <img
-                      className="h-8 object-contain dark:filter dark:invert"
-                      src={images.hubspotLogo}
-                      alt="hubspot logo"
-                      width={32}
-                      height={32}
-                    />
-                  </div>
-                )}
                 {proj.tailwind && (
                   <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
                     <img
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.tailwindLogo}
                       alt="tailwind logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.python && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.pythonLogo}
+                      alt="python logo"
                       width={32}
                       height={32}
                     />

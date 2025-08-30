@@ -1,53 +1,62 @@
-import upworkIcon from "../assets/upwork.svg";
 import emailIcon from "../assets/email.svg";
 import githubIcon from "../assets/github.svg";
-import codepenIcon from "../assets/codepen.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 import htmlLogo from "../assets/logo/html-logo.svg";
 import cssLogo from "../assets/logo/css-logo.svg";
+import cppLogo from "../assets/logo/c++.svg";
+import vsLogo from "../assets/logo/vs.svg";
+import arduinoLogo from "../assets/logo/arduino.svg";
+import autodeskLogo from "../assets/logo/autodesk.svg";
+import ubuntuLogo from "../assets/logo/ubuntu.svg";
 import javascriptLogo from "../assets/logo/javascript-logo.svg";
 import reactLogo from "../assets/logo/react-logo.svg";
 import tailwindLogo from "../assets/logo/tailwind-logo.svg";
 import gitLogo from "../assets/logo/git-logo.svg";
+import pythonLogo from "../assets/logo/python-logo-d.svg";
 import githubLogo from "../assets/logo/github-logo.svg";
-import nextLogo from "../assets/logo/next-logo.svg";
-import hubspotLogo from "../assets/logo/hubspot-logo.svg";
-import felixImage from "../assets/whacky-felix.png";
-import bluecheckImage from "../assets/projects/bluecheck-visible.png";
-import catifyImage from "../assets/projects/catify-visible.png";
-import agencyImage from "../assets/projects/agency-visible.png";
-import shortlyImage from "../assets/projects/shortly-visible.png";
-import sunnysideImage from "../assets/projects/sunnyside-visible.png";
-import slothImage from "../assets/projects/languagesloth-visible.png";
+import angurajImage from "../assets/anguraj.jpg";
+import angurajLogo from "../assets/anguraj_favicon.png";
+import supplyChainImage from "../assets/projects/MSC.png";
+import locationAppImage from "../assets/projects/Location_app.png";
+import llmShellAgentImage from "../assets/projects/llmShellAgentImage.png";
+import erpImage from "../assets/projects/erpImage.png";
+import smartHallImage from "../assets/projects/smartHallImage.png";
 import errorIllustration from "../assets/illustrations/404-vector.svg";
 import successIllustration from "../assets/illustrations/success-vector.svg";
-import brandLogoLight from "../assets/icons/logo-light.png";
-import brandLogoDark from "../assets/icons/logo-dark.png";
-
+import sihImage from "../assets/achievements/sih.jpeg";
+import bosImage from "../assets/achievements/bos.jpeg";
+import elImage from "../assets/achievements/ewinlabs.jpg";
+import ideImage from "../assets/achievements/ide.jpg";
+import sdfImage from "../assets/achievements/sdf.png";
 export default {
   emailIcon,
-  upworkIcon,
   githubIcon,
-  codepenIcon,
   linkedinIcon,
   htmlLogo,
   cssLogo,
+  cppLogo,
+  vsLogo,
+  arduinoLogo,
+  autodeskLogo,
+  ubuntuLogo,
   javascriptLogo,
   reactLogo,
   tailwindLogo,
   gitLogo,
+  pythonLogo,
   githubLogo,
-  nextLogo,
-  hubspotLogo,
-  felixImage,
-  bluecheckImage,
-  catifyImage,
-  agencyImage,
-  shortlyImage,
-  sunnysideImage,
-  slothImage,
+  supplyChainImage,
+  locationAppImage,
+  llmShellAgentImage,
+  erpImage,
+  smartHallImage,
+  angurajImage,
+  angurajLogo,
   errorIllustration,
   successIllustration,
-  brandLogoLight,
-  brandLogoDark,
+  sihImage,
+  bosImage,
+  elImage,
+  sdfImage,
+  ideImage,
 };

@@ -1,22 +1,22 @@
 import React from "react";
 import images from "../../constants/image";
 import { motion } from "framer-motion";
-
+import Spline from '@splinetool/react-spline';
 const socials = [
   {
     logo: images.linkedinIcon,
     alt: "Linkedin Icon",
-    link: "https://www.linkedin.com/in/felixmacaspac/",
+    link: "https://www.linkedin.com/in/anguraj2004/",
   },
   {
     logo: images.githubIcon,
     alt: "Github Icon",
-    link: "https://github.com/felixmacaspac",
+    link: "https://github.com/anguraj2004",
   },
   {
-    logo: images.codepenIcon,
-    alt: "Codepen Icon",
-    link: "https://codepen.io/fmcmacaspac",
+    logo: images.emailIcon,
+    alt: "Email Icon",
+    link: "mailto:anguraj636927@gmail.com",
   },
 ];
 
@@ -24,7 +24,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="bg-white dark:bg-primary">
       <div className="container relative">
-        <div className="flex items-center flex-col">
+        <div className="flex ml-10 items-start flex-col">
           <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen">
             <motion.h1
               viewport={{ once: true }}
@@ -33,10 +33,13 @@ const HeroSection = () => {
               transition={{ type: "linear", duration: 0.5 }}
               className="hero__heading"
             >
-              Felix M.
+              ANGURAJ 
             </motion.h1>
           </div>
         </div>
+        <Spline className='absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2%] h-full' scene="https://prod.spline.design/sGVXmMAx49qboNmS/scene.splinecode" />
+    
+
         <div className="w-full relative bottom-20 md:w-auto md:absolute md:top-[70%]">
           <ul className="flex flex-row justify-center items-center w-full gap-6 md:flex-col">
             {socials.map((social, index) => (

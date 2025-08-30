@@ -5,7 +5,6 @@ import { Popover, Transition, Dialog } from "@headlessui/react";
 import { XIcon, MenuAlt1Icon } from "@heroicons/react/outline";
 import { MoonIcon, SunIcon } from "@heroicons/react/solid";
 import ContactModal from "../ContactModal";
-import { Form } from "../ContactModal/Form";
 import { motion } from "framer-motion";
 import useDarkMode from "../../hooks/useDarkMode";
 
@@ -27,8 +26,8 @@ const navlinks = [
     href: "#projects",
   },
   {
-    name: "Uses",
-    href: "#uses",
+    name: "Achievements",
+    href: "#achievements",
   },
 ];
 
@@ -74,27 +73,6 @@ export default function NavBar() {
         className="container"
       >
         <div className="flex justify-end items-center px-0 py-4 gap-4 sm:px-6 lg:py-8 lg:gap-10">
-          <div className="mr-auto">
-            <a href="#home">
-              {darkTheme ? (
-                <img
-                  className="h-12 w-auto"
-                  src={images.brandLogoDark}
-                  alt="brand icon"
-                  height={12}
-                  width={245}
-                />
-              ) : (
-                <img
-                  className="h-12 w-auto"
-                  src={images.brandLogoLight}
-                  alt="brand icon"
-                  height={12}
-                  width={245}
-                />
-              )}
-            </a>
-          </div>
           <div className="-mr-2 -my-2 lg:hidden">
             <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary dark:text-white">
               <span className="sr-only">Open menu</span>
@@ -134,7 +112,7 @@ export default function NavBar() {
           </Popover.Group>
           <div className="hidden lg:flex">
             <ContactModal toggleOpen={modalIsOpen} toggleClose={toggleModal}>
-              <Form />
+              
             </ContactModal>
           </div>
           <motion.div
@@ -177,7 +155,7 @@ export default function NavBar() {
             focus
             className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden"
           >
-            <div className="rounded-lg shadow-lg filter drop-shadow-lg bg-primary-700">
+            <div className="rounded-lg shadow-lg filter drop-shadow-lg bg-white dark:bg-primary text-gray-800 dark:text-white">
               <div className="pt-5 pb-6 px-5">
                 <div className="flex items-center justify-between">
                   <motion.div
@@ -202,11 +180,11 @@ export default function NavBar() {
                     {darkTheme ? (
                       <SunIcon className="h-6 w-6 cursor-pointer opacity-100 text-white" />
                     ) : (
-                      <MoonIcon className="h-6 w-6 cursor-pointer opacity-100 text-white" />
+                      <MoonIcon className="h-6 w-6 cursor-pointer opacity-100 text-black" />
                     )}
                   </motion.div>
                   <div className="-mr-2">
-                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
+                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-800 dark:text-white hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -218,7 +196,7 @@ export default function NavBar() {
                       <a
                         key={navlink.name}
                         href={navlink.href}
-                        className="text-base font-medium text-white w-max relative"
+                        className="text-base font-medium text-gray-800 dark:text-white w-max relative"
                       >
                         {navlink.name}
                         {navlink.type === "new" && (
@@ -239,7 +217,7 @@ export default function NavBar() {
                       toggleOpen={modalIsOpen}
                       toggleClose={toggleModal}
                     >
-                      <Form />
+                      
                     </ContactModal>
                   </div>
                 </div>

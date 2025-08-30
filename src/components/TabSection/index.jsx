@@ -4,15 +4,17 @@ import "react-tabs/style/react-tabs.css";
 import images from "../../constants/image";
 import { ExternalLinkIcon } from "@heroicons/react/solid";
 import { motion } from "framer-motion";
+
 const logos = [
   {
-    image: images.htmlLogo,
-    title: "HTML5",
+    image: images.pythonLogo,
+    title: "Python",
   },
   {
-    image: images.cssLogo,
-    title: "CSS3",
+    image: images.cppLogo,
+    title: "C++",
   },
+  
   {
     image: images.javascriptLogo,
     title: "JavaScript",
@@ -22,43 +24,52 @@ const logos = [
     title: "Git",
   },
   {
-    image: images.githubLogo,
-    title: "Github",
+    image: images.htmlLogo,
+    title: "HTML5",
+  },
+  {
+    image: images.cssLogo,
+    title: "CSS3",
   },
   {
     image: images.reactLogo,
     title: "React",
   },
   {
-    image: images.nextLogo,
-    title: "NextJS",
-  },
-  {
-    image: images.hubspotLogo,
-    title: "HubSpot",
-  },
-  {
     image: images.tailwindLogo,
     title: "Tailwind",
+  },
+  {
+    image: images.vsLogo,
+    title: "Visual Studio",
+  },
+  
+  {
+    image: images.arduinoLogo,
+    title: "Arduino",
+  },
+  {
+    image: images.autodeskLogo,
+    title: "Autodesk",
+  },
+  {
+    image: images.ubuntuLogo,
+    title: "Linux",
   },
 ];
 
 const certifications = [
   {
-    title: "Hubspot CMS for Developers",
-    link: "https://app.hubspot.com/academy/achievements/clt3bnwb/en/1/felix-macaspac/hubspot-cms-for-developers",
+    title: "IBM Introduction to Data Analytics",
+    link: "https://www.credly.com/badges/ibm-data-analytics", // replace with real link if you have one
   },
   {
-    title: "HubSpot CMS for Developers II",
-    link: "https://app.hubspot.com/academy/achievements/c7mbsmjz/en/1/felix-macaspac/hubspot-cms-for-developers-ii-best-practices",
+    title: "AICTE IDE Bootcamp (Innovation, Design, Entrepreneurship)",
+    link: "https://www.aicte-india.org/ide-bootcamp", // replace with real link
   },
   {
-    title: "Hubspot CMS for Marketers",
-    link: "https://app.hubspot.com/academy/achievements/4nsfl59x/en/1/felix-macaspac/hubspot-cms-for-marketers",
-  },
-  {
-    title: "Hubspot Marketing Software",
-    link: "https://app.hubspot.com/academy/achievements/9z322p95/en/1/felix-macaspac/hubspot-marketing-software",
+    title: "Interpersonal Skills Training (Flextronics & SDF Foundation)",
+    link: "#", // placeholder
   },
 ];
 
@@ -92,18 +103,15 @@ const TabSection = () => {
             className="w-full text-primary md:w-1/2 dark:text-white"
           >
             <h2 className="text-2xl font-semibold mb-2">
-              HubSpot CMS Developer | Frontend Developer
+              Mechatronics Engineer | AI & Embedded Systems Enthusiast
             </h2>
             <p className="text-base font-normal text-neutral-700 dark:text-neutral-300">
-              Front-end Engineer with 2+ years of experience in developing and
-              implementing responsive, user-friendly websites and web
-              applications. Proficient in the use of HubSpot CMS, HubL, HTML,
-              CSS, and JavaScript. Skilled in utilizing modern front-end
-              technologies such as React, Nextjs, and Tailwind to deliver
-              exceptional user experiences. Responsible for bug fixing and
-              maintaining current projects. Certified HubSpot CMS Developer with
-              a track record of successfully completing projects utilizing the
-              platform.
+              I am <b>Anguraj S</b>, a final-year <b>B.E. Mechatronics student at Thiagarajar College of Engineering</b> (CGPA 8.84). 
+              Passionate about <b>AI, Embedded Systems, IoT, Robotics, and Image Processing</b>. 
+              I have worked on projects like a <b>Sign Language to Text Translator</b>, 
+              <b>Realtime Vaccine Supply Chain Monitoring System</b>, 
+              and a <b>Pepper Harvesting System (patented)</b>. 
+              I was a <b>Finalist in Smart India Hackathon 2023</b> (Software Edition) and actively contribute to technical, cultural, and leadership activities.
             </p>
             <br />
             <h3 className="font-semibold text-xl mb-2">Certifications 📝:</h3>
@@ -137,9 +145,9 @@ const TabSection = () => {
               <div className="absolute top-0 rounded-lg left-0 z-50 bg-primary-400 animate-pulse w-full md:h-[450px]" />
             )}
             <img
-              src={images.felixImage}
+              src={images.angurajImage}
               className="h-full w-full z-10 object-cover object-top rounded-lg filter shadow-lg"
-              alt="Image Felix"
+              alt="Image of Anguraj S"
               loading="lazy"
               width={664}
               height={450}

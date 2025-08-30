@@ -5,10 +5,12 @@
 @layer base {
   html {
     @apply scroll-smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply font-default;
+    overflow-x: hidden;
   }
 
   body * {
@@ -18,7 +20,7 @@
 
 @layer components {
   .hero__heading {
-    @apply text-5xl text-primary font-display relative sm:text-7xl md:text-9xl dark:text-white;
+    @apply text-3xl text-primary font-display relative sm:text-5xl md:text-7xl dark:text-white;
   }
 
   .hero__heading::before {
@@ -27,8 +29,8 @@
   }
 
   .hero__heading::after {
-    @apply text-xs text-primary-400 font-medium font-default absolute -bottom-6 -right-10 sm:text-base dark:text-opacity-80 dark:text-white;
-    content: "FRONT-END DEVELOPER";
+    @apply text-xs text-primary-400 font-medium font-default absolute -bottom-10 -right-16 sm:text-base dark:text-opacity-80 dark:text-white;
+    content: "MECHATRONICS ENGINEER";
   }
 }
 
