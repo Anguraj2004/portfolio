@@ -5,5 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
  
   plugins: [react()],
-   base: '/portfolio',
+   base: '/portfolio/',
+   build: {
+  chunkSizeWarningLimit: 2000 // increase limit to ignore warnings
+}
+
 })

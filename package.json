@@ -1,10 +1,10 @@
 {
-  "name": "react-2022-portfolio",
+  "name": "portfolio",
   "homepage": "https://anguraj2004.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite",  
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
