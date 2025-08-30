@@ -35,7 +35,7 @@ const achievementsData = [
 ];
 
 // Duplicate array for smooth loop
-const loopedData = [...achievementsData, ...achievementsData];
+const loopedData = [...achievementsData, ...achievementsData, ...achievementsData, ...achievementsData,];
 
 const Achievements = () => {
   const containerRef = useRef(null);
@@ -80,7 +80,9 @@ const Achievements = () => {
         {loopedData.map((proj, index) => (
           <div
             key={index}
-            className={`flex-shrink-0 w-[${cardWidthPercentage}%] md:w-[${mdCardWidthPercentage}%] bg-white dark:bg-neutral-800 rounded-lg shadow-lg overflow-hidden`}
+            className={`flex-shrink-0 w-1/3 bg-white dark:bg-neutral-800 rounded-lg shadow-lg overflow-hidden`}
+            width={684}
+                height={355}
           >
             <img
               src={proj.image}
