@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
    base: '/portfolio/',
    build: {
-  chunkSizeWarningLimit: 2000 // increase limit to ignore warnings
+  chunkSizeWarningLimit: 2400 // increase limit to ignore warnings
 }
 
 })
