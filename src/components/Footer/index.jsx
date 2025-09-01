@@ -26,7 +26,7 @@ const Footer = () => {
     <div className="bg-white py-16 dark:bg-primary">
       <div className="text-center flex flex-col items-center gap-4">
         <p className="text-primary font-normal text-base dark:text-white">
-          Anguraj © {currentYear}
+          ©  Anguraj {currentYear}
         </p>
         <p className="text-primary font-semibold text-base dark:text-white">
           All rights reserved.

@@ -61,11 +61,11 @@ const logos = [
 const certifications = [
   {
     title: "IBM Introduction to Data Analytics",
-    link: "https://www.credly.com/badges/ibm-data-analytics", // replace with real link if you have one
+    link: "#", // replace with real link if you have one
   },
   {
     title: "AICTE IDE Bootcamp (Innovation, Design, Entrepreneurship)",
-    link: "https://www.aicte-india.org/ide-bootcamp", // replace with real link
+    link: "#", // replace with real link
   },
   {
     title: "Interpersonal Skills Training (Flextronics & SDF Foundation)",
@@ -106,11 +106,9 @@ const TabSection = () => {
               Mechatronics Engineer | AI & Embedded Systems Enthusiast
             </h2>
             <p className="text-base font-normal text-neutral-700 dark:text-neutral-300">
-              I am <b>Anguraj S</b>, a final-year <b>B.E. Mechatronics student at Thiagarajar College of Engineering</b> (CGPA 8.84). 
+              I am <b>Anguraj S</b>, a final-year <b>B.E. Mechatronics student at Thiagarajar College of Engineering</b>. 
               Passionate about <b>AI, Embedded Systems, IoT, Robotics, and Image Processing</b>. 
-              I have worked on projects like a <b>Sign Language to Text Translator</b>, 
-              <b>Realtime Vaccine Supply Chain Monitoring System</b>, 
-              and a <b>Pepper Harvesting System (patented)</b>. 
+              I have worked on many projects regarding these fields .
               I was a <b>Finalist in Smart India Hackathon 2023</b> (Software Edition) and actively contribute to technical, cultural, and leadership activities.
             </p>
             <br />
