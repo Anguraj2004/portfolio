@@ -74,7 +74,7 @@ const Achievements = () => {
   <div className="container mx-auto py-10 px-4">
     <div
       ref={containerRef}
-      className="flex space-x-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
+      className="flex space-x-4 overflow-x-hidden scrollbar-hide snap-x snap-mandatory"
     >
       {loopedData.map((proj, index) => (
         <div
