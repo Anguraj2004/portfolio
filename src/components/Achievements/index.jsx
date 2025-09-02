@@ -5,7 +5,7 @@ const achievementsData = [
   {
     heading: "SIH 2023 Finalist",
     description:
-      "Grand Finale of Smart India Hackathon (SIH) 2023 with Dhiyanesh R, Anguraj S, Rishenath E, Alagu Pariksit A, Abdul Farith, DEVIKA C G at Poornima Institute of Engineering & Technology, Jaipur - software edition.",
+      "Grand Finale of Smart India Hackathon (SIH) 2023 with Dhiyanesh R, Anguraj S, Rishenath E, Alagu Pariksit A, Abdul Farith, Devika C G and our Mentor Sheik Masthan at Poornima Institute of Engineering & Technology, Jaipur - software edition.",
     image:images.sihImage,
   },
   {
@@ -40,10 +40,6 @@ const loopedData = [...achievementsData, ...achievementsData, ...achievementsDat
 const Achievements = () => {
   const containerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-
-  const cardWidthPercentage = 45; // small screens
-  const mdCardWidthPercentage = 30; // medium+
-
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;

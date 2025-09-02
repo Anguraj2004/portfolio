@@ -23,6 +23,7 @@ const socials = [
 const HeroSection = () => {
   return (
     <section id="home" className="bg-white dark:bg-primary">
+      
       <div className="container relative">
         <div className="flex ml-10 items-start flex-col">
           <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen">

@@ -73,6 +73,25 @@ export default function NavBar() {
         className="container"
       >
         <div className="flex justify-end items-center px-0 py-4 gap-4 sm:px-6 lg:py-8 lg:gap-10">
+          <div className="mr-auto flex items-center gap-2">
+            <a href="https://ewinlabs.com/">
+                <img
+                  className="h-8 w-auto dark:invert"
+                  src={images.ewinlabsIcon}
+                  alt="ewin labs icon"
+                  height={12}
+                  width={245}
+                />
+                
+            </a>
+            <img
+                  className="h-6 w-auto dark:invert"
+                  src={images.ewinlabstextIcon}
+                  alt="ewin labs icon"
+                  height={10}
+                  width={245}
+                />
+          </div>
           <div className="-mr-2 -my-2 lg:hidden">
             <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary dark:text-white">
               <span className="sr-only">Open menu</span>

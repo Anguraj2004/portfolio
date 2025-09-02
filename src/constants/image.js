@@ -1,6 +1,8 @@
 import emailIcon from "../assets/email.svg";
 import githubIcon from "../assets/github.svg";
 import linkedinIcon from "../assets/linkedin.svg";
+import ewinlabsIcon from "../assets/ewinlabs.svg";
+import ewinlabstextIcon from "../assets/ewinlabs_text.svg";
 import htmlLogo from "../assets/logo/html-logo.svg";
 import cssLogo from "../assets/logo/css-logo.svg";
 import cppLogo from "../assets/logo/c++.svg";
@@ -32,6 +34,8 @@ export default {
   emailIcon,
   githubIcon,
   linkedinIcon,
+  ewinlabsIcon,
+  ewinlabstextIcon,
   htmlLogo,
   cssLogo,
   cppLogo,

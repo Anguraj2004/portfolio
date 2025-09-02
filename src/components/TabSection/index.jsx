@@ -109,7 +109,7 @@ const TabSection = () => {
               I am <b>Anguraj S</b>, a final-year <b>B.E. Mechatronics student at Thiagarajar College of Engineering</b>. 
               Passionate about <b>AI, Embedded Systems, IoT, Robotics, and Image Processing</b>. 
               I have worked on many projects regarding these fields .
-              I was a <b>Finalist in Smart India Hackathon 2023</b> (Software Edition) and actively contribute to technical, cultural, and leadership activities.
+              I was a <b>Finalist in Smart India Hackathon 2023</b> (Software Edition) and actively contribute to technical, cultural, and leadership activities in my college days.
             </p>
             <br />
             <h3 className="font-semibold text-xl mb-2">Certifications 📝:</h3>

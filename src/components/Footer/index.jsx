@@ -17,6 +17,11 @@ const socials = [
     alt: "Email Icon",
     link: "mailto:anguraj636927@gmail.com",
   },
+  {
+    logo: images.ewinlabsIcon,
+    alt: "Ewin Labs Icon",
+    link: "https://ewinlabs.com/",
+  },
 ];
 
 const Footer = () => {
