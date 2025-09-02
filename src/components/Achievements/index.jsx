@@ -71,54 +71,64 @@ const Achievements = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-10 px-4">
-
-      <div
-        ref={containerRef}
-        className="flex space-x-6 overflow-hidden scrollbar-hide"
-      >
-        {loopedData.map((proj, index) => (
-          <div
-            key={index}
-            className={`flex-shrink-0 w-1/3 bg-white dark:bg-neutral-800 rounded-lg shadow-lg overflow-hidden`}
-            width={684}
-                height={355}
-          >
-            <img
-              src={proj.image}
-              alt={proj.heading}
-              className="w-full h-48 object-cover rounded-t-lg filter shadow-lg"
-              loading="lazy"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2 dark:text-white">{proj.heading}</h3>
-              <p className="text-neutral-700 dark:text-neutral-300 text-sm">{proj.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Dots Navigation */}
-      <div className="flex justify-center mt-4 space-x-2">
-        {achievementsData.map((_, idx) => (
-          <button
-            key={idx}
-            className={`w-3 h-3 rounded-full ${
-              activeIndex === idx ? "bg-primary" : "bg-neutral-400 dark:bg-neutral-600"
-            }`}
-            onClick={() => {
-              const container = containerRef.current;
-              if (container) {
-                const cardWidth = container.scrollWidth / loopedData.length;
-                container.scrollLeft = cardWidth * idx;
-                setActiveIndex(idx);
-              }
-            }}
+  <div className="container mx-auto py-10 px-4">
+    <div
+      ref={containerRef}
+      className="flex space-x-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
+    >
+      {loopedData.map((proj, index) => (
+        <div
+          key={index}
+          className="
+            flex-shrink-0 
+            w-[85%] sm:w-1/2 lg:w-1/3 
+            bg-white dark:bg-neutral-800 
+            rounded-lg shadow-lg overflow-hidden 
+            snap-center
+          "
+        >
+          <img
+            src={proj.image}
+            alt={proj.heading}
+            className="w-full h-48 object-cover rounded-t-lg filter shadow-lg"
+            loading="lazy"
           />
-        ))}
-      </div>
+          <div className="p-4">
+            <h3 className="text-lg sm:text-xl font-semibold mb-2 dark:text-white">
+              {proj.heading}
+            </h3>
+            <p className="text-neutral-700 dark:text-neutral-300 text-sm">
+              {proj.description}
+            </p>
+          </div>
+        </div>
+      ))}
     </div>
-  );
+
+    {/* Dots Navigation */}
+    <div className="flex justify-center mt-4 space-x-2">
+      {achievementsData.map((_, idx) => (
+        <button
+          key={idx}
+          className={`w-3 h-3 rounded-full ${
+            activeIndex === idx
+              ? "bg-primary"
+              : "bg-neutral-400 dark:bg-neutral-600"
+          }`}
+          onClick={() => {
+            const container = containerRef.current;
+            if (container) {
+              const cardWidth = container.scrollWidth / loopedData.length;
+              container.scrollLeft = cardWidth * idx;
+              setActiveIndex(idx);
+            }
+          }}
+        />
+      ))}
+    </div>
+  </div>
+);
+
 };
 
 export default Achievements;

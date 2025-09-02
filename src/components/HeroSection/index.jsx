@@ -37,8 +37,9 @@ const HeroSection = () => {
             </motion.h1>
           </div>
         </div>
-        <Spline className='absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2%] h-full' scene="https://prod.spline.design/sGVXmMAx49qboNmS/scene.splinecode" />
-    
+        {/*<Spline className='absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2%] h-full' scene="https://prod.spline.design/sGVXmMAx49qboNmS/scene.splinecode" />*/}
+        <Spline className="hidden sm:block absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2%] h-full" scene="https://prod.spline.design/sGVXmMAx49qboNmS/scene.splinecode" />
+
 
         <div className="w-full relative bottom-20 md:w-auto md:absolute md:top-[70%]">
           <ul className="flex flex-row justify-center items-center w-full gap-6 md:flex-col">
