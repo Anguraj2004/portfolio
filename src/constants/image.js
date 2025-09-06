@@ -23,6 +23,7 @@ import locationAppImage from "../assets/projects/Location_app1.jpg";
 import llmShellAgentImage from "../assets/projects/llmShellAgentImage1.jpg";
 import erpImage from "../assets/projects/erpImage1.jpg";
 import smartHallImage from "../assets/projects/smartHallImage1.jpg";
+import coolerImage from "../assets/projects/cooler.png";
 import errorIllustration from "../assets/illustrations/404-vector.svg";
 import successIllustration from "../assets/illustrations/success-vector.svg";
 import sihImage from "../assets/achievements/sih.jpg";
@@ -53,6 +54,7 @@ export default {
   locationAppImage,
   llmShellAgentImage,
   erpImage,
+  coolerImage,
   smartHallImage,
   angurajImage,
   angurajLogo,

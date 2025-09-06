@@ -5,37 +5,36 @@ import RichText from "../RichText";
 import { motion } from "framer-motion";
 
 const projects = [
-  {
+   {
     id: 1,
-    image: images.supplyChainImage, // add this to your constants/image.js
-    heading: "Medical Supply Chain Monitoring",
-    description:
-      "<p>IoT-based solution to monitor vaccines during transportation. Tracks <b>temperature, humidity, and location</b> in real-time with alerts when conditions deviate. Ensures vaccine safety and compliance.</p>",
-    githubLink: "https://github.com/Anguraj2004/Medical-supply-chain-monitoring-",
-    // techno
-    html: true,
-    css: true,
-    javascript: true,
-  },
-  {
-    id: 2,
-    image: images.locationAppImage,
-    heading: "Location App",
-    description:
-      "<p>Mobile app for <b>real-time location tracking</b> with map integration. Provides GPS-based updates and easy visualization of tracked devices/users.</p>",
-    githubLink: "https://github.com/Anguraj2004/LOCATION-APP",
-    react: true,
-    tailwind: true,
-    javascript: true,
-  },
-  {
-    id: 3,
     image: images.llmShellAgentImage,
     heading: "LLM Shell Agent",
     description:
       "<p>AI-powered shell assistant built with Python. Uses LLMs to understand commands and <b>execute system/shell operations</b> via natural language queries. Integrated with Ollama API for local inference.</p>",
     githubLink: "https://github.com/Anguraj2004/llm_shell_agent",
     python: true,
+  },
+  {
+    id: 2,
+    image: images.coolerImage, // add this to your constants/image.js
+    heading: "A Dual-mode Regenerative cooling sytem ",
+    description:
+      "<p>Designed a dual‑mode regenerative cooling system integrating active and passive heat exchange, enhancing thermal efficiency, adaptability, and performance for aerospace and high‑temperature engineering applications.</p>",
+    githubLink: "https://github.com/Anguraj2004",
+    // techno
+    python: true,
+  },
+  {
+    id: 3,
+    image: images.smartHallImage,
+    heading: "MPC System for seminar hall appliances based on occupancy",
+    description:
+      "<p>IoT + AI based classroom automation system. Integrates <b>person detection (camera), AC optimization, and smart light control</b> for energy efficiency. Built with ESP32-CAM, Flask backend, and React Native app. Includes ML for crowd detection.</p>",
+    githubLink: "https://github.com/Anguraj2004/smart-hall", // you can push the rebuilt repo here
+    react: true,
+    tailwind: true,
+    python: true,
+    javascript: true,
   },
   {
     id: 4,
@@ -52,16 +51,30 @@ const projects = [
   },
   {
     id: 5,
-    image: images.smartHallImage,
-    heading: "MPC System for seminar hall appliances based on occupancy",
+    image: images.supplyChainImage, // add this to your constants/image.js
+    heading: "Medical Supply Chain Monitoring",
     description:
-      "<p>IoT + AI based classroom automation system. Integrates <b>person detection (camera), AC optimization, and smart light control</b> for energy efficiency. Built with ESP32-CAM, Flask backend, and React Native app. Includes ML for crowd detection.</p>",
-    githubLink: "https://github.com/Anguraj2004/smart-hall", // you can push the rebuilt repo here
-    react: true,
-    tailwind: true,
-    python: true,
+      "<p>IoT-based solution to monitor vaccines during transportation. Tracks <b>temperature, humidity, and location</b> in real-time with alerts when conditions deviate. Ensures vaccine safety and compliance.</p>",
+    githubLink: "https://github.com/Anguraj2004/Medical-supply-chain-monitoring-",
+    // techno
+    html: true,
+    css: true,
     javascript: true,
   },
+  {
+    id: 6,
+    image: images.locationAppImage,
+    heading: "Location App",
+    description:
+      "<p>Mobile app for <b>real-time location tracking</b> with map integration. Provides GPS-based updates and easy visualization of tracked devices/users.</p>",
+    githubLink: "https://github.com/Anguraj2004/LOCATION-APP",
+    react: true,
+    tailwind: true,
+    javascript: true,
+  },
+  
+  
+  
 ];
 
 const CardGrid = () => {
